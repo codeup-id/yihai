@@ -1,0 +1,16 @@
+<?php
+
+$db = [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=localhost:3306;dbname=yihai;port:3306',
+    'username' => 'root',
+    'password' => 'yourpassword',
+    'charset' => 'utf8',
+
+];
+if (YII_ENV_PROD) {
+    $db['enableSchemaCache'] = true;
+    $db['schemaCacheDuration'] = 60;
+    $db['schemaCache'] = 'cache';
+}
+return $db;
