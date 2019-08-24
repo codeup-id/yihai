@@ -1,5 +1,4 @@
 <?php
-$config = require __DIR__ . '/bootstrap.php';
 $config = [
     'id' => 'yihai',
     'name' => 'Sistem Informasi Managemen Perjalanan Dinas',

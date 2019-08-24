@@ -10,7 +10,7 @@ $db = [
 ];
 if (YII_ENV_PROD) {
     $db['enableSchemaCache'] = true;
-    $db['schemaCacheDuration'] = 60;
-    $db['schemaCache'] = 'cache';
+    $db['schemaCacheDuration'] = 0;
+    $db['schemaCache'] = 'cache-db';
 }
 return $db;

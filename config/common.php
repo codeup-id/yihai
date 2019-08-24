@@ -5,6 +5,9 @@
  * Copyright (c) 2019, CodeUP.
  * @author  Upik Saleh <upik@codeup.id>
  */
+
+require __DIR__ . '/bootstrap.php';
+
 if (!file_exists(__DIR__ . '/db.php')) {
     die('DB config must set, db.php not found in ' . __DIR__ . '/db.php');
 }

@@ -13,9 +13,6 @@ $config = [
         '@tests' => '@yihai/tests',
     ],
     'components' => [
-        'cache' => [
-            'class' => 'yii\caching\FileCache',
-        ],
         'log' => [
             'targets' => [
                 [
