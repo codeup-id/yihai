@@ -13,7 +13,7 @@ $config = [
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'xr-gLUar6dj12i4q77wLcDbpPeqk--nB',
+            'cookieValidationKey' => '{cookieValidationKey}',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
@@ -35,44 +35,6 @@ $config = [
             'class' => 'yihai\core\web\User',
         ],
     ],
-    'controllerMap' => [
-        'system/filemanager' => [
-            'class' => 'yihai\core\extension\elfinder\Controller',
-            'access' => ['@'],
-            'connectOptions' => [
-                'uploadDeny' => ['all'],
-            ],
-            'roots' => [
-                [
-                    'baseUrl' => '@web/cfiles/show',
-                    'basePath' => '@yihai/storages',
-                    'path' => 'public',
-                    'name' => 'Public Files',
-                    'tmbPath' => 'assets/thumbnails',
-                    'options' => [
-                        'uploadDeny' => ['text/x-php'],
-                    ]
-                ],
-                [
-                    'baseUrl' => '@web/cfiles/show/photos',
-                    'basePath' => '@yihai/storages',
-                    'path' => '',
-                    'name' => 'Photos',
-                    'access' => ['write' => false, 'read' => true],
-                    'tmbPath' => 'assets/thumbnails',
-                ],
-            ]
-//            'watermark' => [
-//                'source'         => __DIR__.'/logo.png', // Path to Water mark image
-//                'marginRight'    => 5,          // Margin right pixel
-//                'marginBottom'   => 5,          // Margin bottom pixel
-//                'quality'        => 95,         // JPEG image save quality
-//                'transparency'   => 70,         // Water mark image transparency ( other than PNG )
-//                'targetType'     => IMG_GIF|IMG_JPG|IMG_PNG|IMG_WBMP, // Target image formats ( bit-field )
-//                'targetMinPixel' => 200         // Target image minimum pixel size
-//            ]
-        ]
-    ]
 ];
 
 if (YII_ENV_DEV) {
