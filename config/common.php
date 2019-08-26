@@ -19,7 +19,7 @@ if (file_exists(__DIR__ . '/modules-local.php'))
 return [
     'timeZone' => 'Asia/Makassar',
     'language' => 'id',
-    'version' => '1.0.0',
+    'version' => '1.0.2',
     'components' => [
         'db' => $db,
     ],
