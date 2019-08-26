@@ -11,5 +11,13 @@ namespace yihai\assets;
 
 class AppAsset extends \yihai\core\assets\AppAsset
 {
-
+/**
+    public function getLogoUrl()
+    {
+        $url = 'http://your logo url';
+        //or
+        $url = Url::to('@web/static/logo.png');
+        return $url;
+    }
+ **/
 }
