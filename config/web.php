@@ -1,7 +1,7 @@
 <?php
 $config = [
     'id' => 'yihai',
-    'name' => 'Sistem Informasi Managemen Perjalanan Dinas',
+    'name' => 'AppName',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'yihai\controllers',
