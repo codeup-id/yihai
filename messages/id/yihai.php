@@ -7,4 +7,6 @@
  */
 
 
-return [];
+return array_merge(require Yihai::getAlias('@yihai-core/messages/id/yihai.php'), [
+
+]);
