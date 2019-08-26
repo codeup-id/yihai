@@ -9,7 +9,7 @@
 require __DIR__ . '/bootstrap.php';
 
 if (!file_exists(__DIR__ . '/db.php')) {
-    die('DB config must set, db.php not found in ' . __DIR__ . '/db.php');
+    die('DB config must set, db.php not found in ' . __DIR__ . "/db.php\n");
 }
 $db = require __DIR__ . '/db.php';
 
