@@ -25,9 +25,7 @@ $config = [
         'theme' => [
             'list' => [
                 [
-                    'class' => 'yihai\core\themes\defyihai\Theme',
-                    'skin' => 'skin-red-light'
-
+                    'class' => 'yihai\core\themes\defyihai\Theme'
                 ]
             ]
         ],
