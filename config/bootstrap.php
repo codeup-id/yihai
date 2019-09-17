@@ -6,7 +6,7 @@
  * @author  Upik Saleh <upik@codeup.id>
  */
 
-Yii::setAlias('@yihai', dirname(__DIR__));
+Yihai::setAlias('@yihai', dirname(__DIR__));
 if(file_exists(__DIR__.'/bootstrap-local.php')){
     require __DIR__.'/bootstrap-local.php';
 }
